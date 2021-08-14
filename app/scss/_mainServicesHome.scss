@@ -1,0 +1,86 @@
+.main-services{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    .main-services__data-container{
+        padding-left: 5%;
+        padding-right: 5%;
+        h3{
+            color: $main-color;
+            text-align: center;
+        }
+        p{
+            color: $second-color;
+            font-family: sans-serif;
+            text-align: left;
+            font-size: .8rem;
+            font-family: sans-serif;
+            line-height: 35px;
+        }
+        button{
+            display: block;
+            background-color: $second-color;
+            color: $bg-color-main;
+            border: none;
+            cursor: pointer;
+            font-size: .8rem;
+            font-weight: 500;
+            padding: 10px;
+            font-family: Cinzel;
+            text-align: center;
+            margin: auto;
+        }
+    }
+    .main-services__img-container{
+        width: 95%;
+        margin: auto;
+        .main-services__img{
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width: 1050px){
+    .main-services{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 60px;
+        align-items: center;
+        .main-services__data-container{
+            
+            
+            h3{
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            p{
+                font-size: 1rem;
+            }
+            button{
+                display: block;
+                background-color: $second-color;
+                color: $bg-color-main;
+                border: none;
+                cursor: pointer;
+                font-size: 1.2rem;
+                font-weight: 500;
+                padding: 10px;
+                font-family: Cinzel;
+                text-align: center;
+                margin: auto;
+            }
+        }
+        .main-services__img-container{
+            width: 70%;
+            margin: auto;
+            .main-services__img{
+                width: 100%;
+                height: auto;
+            }
+                        
+        }
+    }
+}

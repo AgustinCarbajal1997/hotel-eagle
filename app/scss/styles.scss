@@ -1,0 +1,21 @@
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Cinzel;
+    overflow-x: hidden;
+    
+    
+}
+
+@import "colors";
+@import "header";
+@import "banner";
+@import "mainDescription";
+@import "mainServicesHome";
+@import "additionalServices";
+@import "optionalServices";
+@import "listingServices";

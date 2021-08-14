@@ -1,0 +1,163 @@
+.mainService-section{
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    overflow: hidden;
+    
+
+    
+    .mainService-card{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        
+        .mainService__img{
+            width: 100%;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: brightness(.8);
+            }
+        }
+        
+        .mainServiceContent{
+            
+            position: absolute;
+            top: 80%;
+            bottom: 0%;
+            left: 0%;
+            right: 0%;
+            display: flex;
+            justify-content:center;
+            flex-direction: column;
+            align-items:center;
+            transition: all 1s ease;
+            
+        
+        }
+        .mainServiceContentActive{
+            background-color: rgba(0, 0, 0, 0.535);
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+            left: 0%;
+            right: 0%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center
+        }
+        .titleCard{
+            font-size: 2rem;
+            color: $bg-color-main;
+            text-align: center;
+        }
+        .buttonCard{
+            background-color: transparent;
+            border: $bg-color-main 2px solid;
+            color: $bg-color-main;
+            font-size: 1rem;
+            padding:.5rem;
+            cursor: pointer;
+            transition: all 1s ease;
+            visibility: hidden;
+            opacity: 0;
+        }
+        .buttonCardActive{
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        
+        
+    }
+}
+
+
+
+@media screen and (min-width: 1050px){
+    .mainService-section{
+        width: 90%;
+        height: fit-content;
+        margin: 10% auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+        
+        gap: 4rem;
+        
+        overflow: hidden;
+        
+    
+        
+        .mainService-card{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            
+            .mainService__img{
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            
+            .mainServiceContent{
+                // background-color: rgba(0, 0, 0, 0.535);
+                position: absolute;
+                top: 80%;
+                bottom: 0%;
+                left: 0%;
+                right: 0%;
+                display: flex;
+                justify-content:center;
+                flex-direction: column;
+                align-items:center;
+                transition: all 1s ease;
+            
+            }
+            .mainServiceContentActive{
+                background-color: rgba(0, 0, 0, 0.535);
+                position: absolute;
+                top: 0%;
+                bottom: 0%;
+                left: 0%;
+                right: 0%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center
+            }
+            .titleCard{
+                font-size: 3rem;
+                color: $bg-color-main;
+            }
+            .buttonCard{
+                background-color: transparent;
+                border: $bg-color-main 2px solid;
+                color: $bg-color-main;
+                font-size: 1rem;
+                padding:.5rem;
+                cursor: pointer;
+                transition: all 1s ease;
+                visibility: hidden;
+                opacity: 0;
+            }
+            .buttonCardActive{
+                visibility: visible;
+                opacity: 1;
+            }
+            
+            
+            
+        }
+    }
+}
