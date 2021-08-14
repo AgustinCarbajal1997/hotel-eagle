@@ -17,11 +17,16 @@ export const MainDescription = (props) => {
 
     $videoDescriptionContainer.innerHTML = `
         <div class="video-description">
-            <video src="${props.video}" autoplay loop></video>
+            <video src="${props.video}" muted controls autoplay loop></video>
         </div>
     `;
     $videoDescriptionContainer.classList.add("video-description-container");
     $divDescription.appendChild($videoDescriptionContainer);
+
+    document.addEventListener("mouseover", e=>{
+        const video = document.querySelector(".video-description video");
+        if(e.target === video) video.play();
+    })
 
     window.addEventListener("resize",e =>{
         const $videoDescription = document.querySelector(".video-description-container");
