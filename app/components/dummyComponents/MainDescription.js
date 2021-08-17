@@ -23,10 +23,10 @@ export const MainDescription = (props) => {
     $videoDescriptionContainer.classList.add("video-description-container");
     $divDescription.appendChild($videoDescriptionContainer);
 
-    document.addEventListener("mouseover", e=>{
-        const video = document.querySelector(".video-description video");
-        if(e.target === video) video.play();
-    })
+    // document.addEventListener("mouseover", e=>{
+    //     const video = document.querySelector(".video-description video");
+    //     if(e.target === video) video.play();
+    // })
 
     window.addEventListener("resize",e =>{
         const $videoDescription = document.querySelector(".video-description-container");
