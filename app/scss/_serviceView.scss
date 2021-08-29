@@ -1,0 +1,117 @@
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1050px){
+    .section-service-view{
+        padding-top: 12vh;
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 55% 45%;
+        grid-template-areas: "carousel content"
+                            "details details";
+    }
+    .service-view-carousel{
+        grid-area: carousel;
+        display: grid;
+        grid-template-rows: 80% 20%;
+        .service-view-carousel-bigImage{
+            width: 80%;
+            height: 400px;
+            margin: auto;
+            img{
+                
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .service-view-carousel-tinyImages{
+            
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            div{
+                width: 20%;
+                height: 80px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    cursor: pointer;
+                }
+                img:hover{
+                    opacity: 0.8;
+                    transition: all .3s ease;
+                }
+            }
+            
+        }
+    }
+    .service-view-content{
+        grid-area: content;
+        margin-right: 10%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        h2{
+            text-align: left;
+            color: $main-color;
+            font-size: 3rem;
+        }
+        p{
+            font-family: sans-serif;
+            color: $second-color;
+            line-height: 30px;
+        }
+    }
+    .service-view-details{
+        margin-top: 10%;
+        grid-area: details;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        background-color: #313131;
+        gap: 2rem;
+        padding-left: 5%;
+        padding-right: 5%;
+        .service-view-details-data{
+            h3{
+                color: $main-color;
+                font-size: 2rem;
+                font-weight: 600;
+                padding-left: 40px;
+            }
+            ul{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                li{
+                    color: $main-color;
+                    list-style:square;
+                    p{
+                        color: #eaeaea;
+                        line-height: 30px;
+                        font-family: sans-serif;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .service-view-details-book{
+            width: 80%;
+            height: 80%;
+            margin: auto;
+            background-color: $bg-color-main;
+        }
+    }
+
+}

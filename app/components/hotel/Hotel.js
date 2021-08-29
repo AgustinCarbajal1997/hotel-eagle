@@ -13,7 +13,7 @@ export const Hotel = () => {
     
     $hotel.appendChild(Banner(BannerDataHotel))
     $hotel.appendChild(MainDescription(MainDescriptionHotel))
-    ListingServices("rooms")
+    ListingServices("rooms","room")
     $hotel.appendChild(AdditionalServices(AdditionalServicesDataHotel))
     $hotel.appendChild(OptionalServices(OptionalServicesDataHotel))
     

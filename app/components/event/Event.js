@@ -9,7 +9,7 @@ export const Event = () => {
     
     $event.appendChild(Banner(BannerDataEvent));
     $event.appendChild(MainDescription(MainDescriptionEvent))
-    ListingServices("events")
+    // ListingServices("events","space")
     
     
     return $event;

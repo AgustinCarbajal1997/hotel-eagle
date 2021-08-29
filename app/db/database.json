@@ -1,0 +1,71 @@
+{
+    "rooms":{ 
+        "superior":{
+            "id":1,
+            "name":"Superior",
+            "image":["app/assets/rooms/superior1.webp","app/assets/rooms/superior2.jpg","app/assets/rooms/superior3.jpg", "app/assets/rooms/superior4.jpg"],
+            "description":"Coronando el edificio, se encuentran las Suites de Lujo Le Mirador que a través de sus amplios ventanales nos regalan maravillosas vistas abiertas a los parques de La Recoleta y a la silueta del Río de la Plata. Las impactantes suites de inspiración clásica incorporan muebles de diseño contemporáneo, exquisitas sedas, terciopelos, alfombras de pura lana y toques de decoración actuales. Para máximo confort, ofrecen un dormitorio y living independiente, mientras que los espléndidos baños revestidos en mármol de Carrara y Marquina negro poseen bañera, box de ducha separado y amenities de Hermès. Permite cama adicional. Servicio de Mayordomo.",
+            "caracteristicas":["40 m2 de superficie","SMART TV FULL HD 43” ","Caja de Seguridad","Aire acondicionado", "Calefacción control individual","Frigobar","Conexión Internet Wi-Fi","Escritorio de trabajo","Pisos Flotantes","Cargadores USB","Baño totalmente equipado", "Vanitorio doble", "Hidromasaje", "Cabina de ducha", "Sanitarios compartimentados", "Secador de cabello","Amenities diferenciales","Batas y pantuflas","Periódico local","Frutas fileteadas","Dulces del Chef","Living","No Fumadores"]
+        },
+        "estandar":{
+            "id":2,
+            "name":"Estándar",
+            "image":["app/assets/rooms/estandard2.webp","app/assets/rooms/estandar3.jpg","app/assets/rooms/estandar4.jpg","app/assets/rooms/estandar5.jpg"],
+            "description":"Ubicadas en los pisos superiores, las amplias y luminosas Suites Junior Le Mirador brindan a través de sus grandes ventanales magníficas vistas panorámicas de La Recoleta con sus increíbles parques y de la silueta del Río de la Plata. De estilo clásico moderno, el interior fusiona muebles de diseño contemporáneo con exquisitas sedas, terciopelos y alfombras de pura lana, creando espacios de encanto atemporal. Disponen de un dormitorio junto a la sala de estar, balcón francés o balcón terraza y lujosos baños revestidos en mármol de Carrara y Marquina negro equipados con bañera, box de ducha independiente y amenities de Hermès. Servicio de Mayordomo.",
+            "caracteristicas":["40 m2 de superficie","SMART TV FULL HD 43” ","Caja de Seguridad","Aire acondicionado", "Calefacción control individual","Frigobar","Conexión Internet Wi-Fi","Escritorio de trabajo","Pisos Flotantes","Cargadores USB","Baño totalmente equipado", "Vanitorio doble", "Hidromasaje", "Cabina de ducha", "Sanitarios compartimentados", "Secador de cabello","Amenities diferenciales","Batas y pantuflas","Periódico local","Frutas fileteadas","Dulces del Chef","Living","No Fumadores"]
+        },
+        "ejecutiva":{   
+            "id":3,
+            "name":"Ejecutiva",
+            "image":["app/assets/rooms/ejecutiva1.webp","app/assets/rooms/ejecutiva2.jpg",
+                "app/assets/rooms/ejecutiva3.jpg","app/assets/rooms/ejecutiva4.jpg"],
+            "description":"Situadas en los pisos superiores las Suites de Lujo Lounge, con la comodidad de un dormitorio y una sala de estar íntima, son ideales para quienes buscan una estadía tranquila y placentera. Situadas en el ala interior del edificio, el diseño fusiona muebles contemporáneos con exquisitas sedas, terciopelos y alfombras de pura lana, aportando equilibrio y calidez al espacio. Sus lujosos baños revestidos en mármol de Carrara y Marquina negro poseen bañera, box de ducha separado y amenities de Hermès. Permite cama adicional. Servicio de Mayordomo.",
+            "caracteristicas":["40 m2 de superficie","SMART TV FULL HD 43” ","Caja de Seguridad","Aire acondicionado", "Calefacción control individual","Frigobar","Conexión Internet Wi-Fi","Escritorio de trabajo","Pisos Flotantes","Cargadores USB","Baño totalmente equipado", "Vanitorio doble", "Hidromasaje", "Cabina de ducha", "Sanitarios compartimentados", "Secador de cabello","Amenities diferenciales","Batas y pantuflas","Periódico local","Frutas fileteadas","Dulces del Chef","Living","No Fumadores"]
+        },
+        "junior":{   
+            "id":4,
+            "name":"Junior",
+            "image":["app/assets/rooms/junior.webp","app/assets/rooms/junior2.jpg","app/assets/rooms/junior3.png","app/assets/rooms/junior4.jpg"],
+            "description":"En lo más alto del edificio las elegantes Suites Junior Lounge combinan tranquilidad y confort. Situadas en el ala interior del edificio, el diseño combina muebles contemporáneos con exquisitas sedas, terciopelos y alfombras de pura lana, aportando equilibrio y calidez al espacio. Disfrute de una fantástica estadía en estas suites de estilo clásico moderno, que disponen de un dormitorio junto a una sala de estar. Además, la mayoría de estas habitaciones cuentan con la comodidad un amplio vestidor. Los lujosos baños revestidos en mármol de Carrara y Marquina negro poseen bañera, box de ducha independiente y amenities de Hermès. Servicio de Mayordomo.",
+            "caracteristicas":["40 m2 de superficie","SMART TV FULL HD 43” ","Caja de Seguridad","Aire acondicionado", "Calefacción control individual","Frigobar","Conexión Internet Wi-Fi","Escritorio de trabajo","Pisos Flotantes","Cargadores USB","Baño totalmente equipado", "Vanitorio doble", "Hidromasaje", "Cabina de ducha", "Sanitarios compartimentados", "Secador de cabello","Amenities diferenciales","Batas y pantuflas","Periódico local","Frutas fileteadas","Dulces del Chef","Living","No Fumadores"]
+        }
+    },
+    "events":{
+        "galeria-poetas":{
+            "id":1,
+            "image":"app/assets/salons/boda3.webp",
+            "name":"Galeria de los Poetas",
+            "description":"La Galeria de los Poetas es un jardin ubicado en uno de los espacios verdes detrás de Eagle Hotel, lo que lo convierte en un lugar de fácil acceso, pero a la vez permite conservar la intimidad de su evento.Una opción ideal para realizar bodas, eventos empresariales, o agasajos sociales mas íntimos y privados."
+        },
+        "salon-abrojos":{   
+            "id":2,
+            "image":"app/assets/salons/boda1.webp",
+            "name":"Salón Los Abrojos",
+            "description":"El Salón Los Abrojos se encuentra ubicado en la plata baja del hotel. En este recinto cuentan con todos los servicios necesarios para que ustedes y sus invitados celebren una velada única. Se encontrarán con el escenario perfecto para tan importante acontecimiento.Cuenta con:Salón, pista de baile, estacionamiento, cocina para uso del catering."
+        },
+        "espacio-terrazas":{
+            "id":3,
+            "image":"app/assets/salons/boda4.webp",
+            "name":"Espacio Terrazas",
+            "description":"Terrazas es un espacio verde ubicado en el ala este del complejo Eagle, ideal para grandes eventos.Este jardin está pensado para que sus visitantes disfruten de una cómoda y agradable velada. El lugar está preparado para recibir a 230 comensales. Si deciden vivir la experiencia única verán que materializar la noche con la se siempre soñaron no es difícil."
+        },
+        "salon-pinar":{
+            "id":4,
+            "image":"app/assets/salons/boda5.webp",
+            "name":"Salon Pinar",
+            "description":"El imponente Salón Pinar se encuentra equipado con tecnología de última generación en iluminación y equipamiento técnico. Cuenta con capacidad para hasta 500 personas. Se caracteriza por poseer la comodidad necesaria para que puedas realizar eventos medianos y grandes. Ideal para fiestas sociales, bodas o reuniones corporativas.Salón, pista de baile, estacionamiento, cocina para uso del catering."
+        },
+        "jardin-costas":{
+            "id":5,
+            "image":"app/assets/salons/boda-noche.webp",
+            "name":"Jardin Las Costas",
+            "description":"Elegancia, sobriedad y tecnología reunidas en un espectacular espacio verde.El evento desarrollará un estilo e identidad propia, gracias a la versatilidad que el espacio ofrece. Este Jardin es una propuesta increible para todos aquellos que quieran disfrutar de un importante evento al aire libre. El servicio conjuga su excelente gastronomía con un equipo de trabajo que en todo momento transmite su pasión y entrega."
+        },
+        "espacio-moras":{   
+            "id":6,
+            "image":"app/assets/salons/boda7.webp",
+            "name":"Espacio Las Moras",
+            "description":"Un espacio acogedor lujosamente decorado y con luz natural, ideal para cocktails, presentaciones, bodas y pequeños eventos. Espacio para eventos sociales de gran calidad que se pone a su disposición para hacer que un día relevante sea un acontecimiento que se quede en los recuerdos de todos sus seres queridos presentes, gracias a su belleza, elegancia y diversión."
+        }
+    }
+}

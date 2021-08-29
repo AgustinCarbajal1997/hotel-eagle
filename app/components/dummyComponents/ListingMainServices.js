@@ -1,13 +1,19 @@
-export const ListingServices = async (endpoint) => {
+export const ListingServices = async (endpoint, path) => {
     try {
         const reponse = await fetch(`https://eagle-hotel-c85d8-default-rtdb.firebaseio.com/${endpoint}/.json`);
         const data = await reponse.json();
-    
-        const $placeToInsert = document.querySelector(".section-description");
         
+        // the firebase's response is an object which need to be converted into an array, determining the endpoint and data of each item
+        let items = [];
+        Object.keys(data).map(key => items = [...items,{ endpoint:key,data:data[key] }])
+        console.log(items)
+
+        const { hash } = location;
+        console.log(location)
+        const $placeToInsert = document.querySelector(".section-description");
         const $section = document.createElement("section");
 
-        data.map(item =>{
+        items.map(item =>{
             const $divCard = document.createElement("div"),
                 $divImg = document.createElement("div"),
                 $img = document.createElement("img"),
@@ -16,15 +22,15 @@ export const ListingServices = async (endpoint) => {
                 $button = document.createElement("button");
 
                 
-                $img.src = item.image;
-                $img.alt = item.name;
+                $img.src = item.data.image[0];
+                $img.alt = item.data.name;
                 $divImg.classList.add("mainService__img");
                 $divImg.appendChild($img);
 
                 $h3.classList.add("titleCard");
-                $h3.textContent = item.name;
+                $h3.textContent = item.data.name;
                 $button.classList.add("buttonCard");
-                $button.textContent = "VER MÁS";
+                $button.innerHTML = `<a href="${hash}/${path}-${item.endpoint}">VER MAS</a>`;
                 $divContent.classList.add("mainServiceContent");
                 $divContent.appendChild($h3);
                 $divContent.appendChild($button);
@@ -46,7 +52,7 @@ export const ListingServices = async (endpoint) => {
             return $placeToInsert.insertAdjacentElement("afterend",$section);
 
     } catch (error) {
-        console.log(error)
+        console.log("el error es",error)
     }
     
     

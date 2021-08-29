@@ -100,7 +100,7 @@
             justify-content: center;
             flex-direction: column;
             position: relative;
-            
+            overflow: hidden;
             .mainService__img{
                 width: 100%;
                 img{
@@ -150,6 +150,10 @@
                 transition: all 1s ease;
                 visibility: hidden;
                 opacity: 0;
+                a{
+                    text-decoration: none;
+                    color: #ffffff;
+                }
             }
             .buttonCardActive{
                 visibility: visible;

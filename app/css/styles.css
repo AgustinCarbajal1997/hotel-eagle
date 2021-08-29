@@ -552,6 +552,7 @@ body {
     justify-content: center;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
   }
   .mainService-section .mainService-card .mainService__img {
     width: 100%;
@@ -600,9 +601,118 @@ body {
     visibility: hidden;
     opacity: 0;
   }
+  .mainService-section .mainService-card .buttonCard a {
+    text-decoration: none;
+    color: #ffffff;
+  }
   .mainService-section .mainService-card .buttonCardActive {
     visibility: visible;
     opacity: 1;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .section-service-view {
+    padding-top: 12vh;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-areas: "carousel content" "details details";
+  }
+
+  .service-view-carousel {
+    grid-area: carousel;
+    display: grid;
+    grid-template-rows: 80% 20%;
+  }
+  .service-view-carousel .service-view-carousel-bigImage {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+  }
+  .service-view-carousel .service-view-carousel-bigImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .service-view-carousel .service-view-carousel-tinyImages {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .service-view-carousel .service-view-carousel-tinyImages div {
+    width: 20%;
+    height: 80px;
+  }
+  .service-view-carousel .service-view-carousel-tinyImages div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+  }
+  .service-view-carousel .service-view-carousel-tinyImages div img:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+
+  .service-view-content {
+    grid-area: content;
+    margin-right: 10%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .service-view-content h2 {
+    text-align: left;
+    color: #b99768;
+    font-size: 3rem;
+  }
+  .service-view-content p {
+    font-family: sans-serif;
+    color: #634b3f;
+    line-height: 30px;
+  }
+
+  .service-view-details {
+    margin-top: 10%;
+    grid-area: details;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: #313131;
+    gap: 2rem;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .service-view-details .service-view-details-data h3 {
+    color: #b99768;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-left: 40px;
+  }
+  .service-view-details .service-view-details-data ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .service-view-details .service-view-details-data ul li {
+    color: #b99768;
+    list-style: square;
+  }
+  .service-view-details .service-view-details-data ul li p {
+    color: #eaeaea;
+    line-height: 30px;
+    font-family: sans-serif;
+    margin: 0;
+  }
+  .service-view-details .service-view-details-book {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background-color: #ffffff;
   }
 }
 
